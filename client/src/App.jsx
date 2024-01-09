@@ -6,12 +6,14 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Login from './pages/Login';
 import { Register } from './pages/Register';
+import DashBoard from './pages/DashBoard';
 
 const App = ()=> {
   return (
     <div>
       <NavBar/>
       <Routes>
+        <Route path="/" element={<DashBoard/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>

@@ -15,7 +15,9 @@ const NavBar = () => {
       <Toolbar
         start={() => (
           <div className="w-[80px]">
-            <img src="Logo.png" alt="" />
+            <Link to={'/'}>
+             <img src="Logo.png" alt="" />
+            </Link>
           </div>
         )}
         end={() => (
