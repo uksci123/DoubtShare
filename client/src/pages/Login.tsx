@@ -1,8 +1,9 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import { Button } from "primereact/button";
+import { Link } from "react-router-dom";
 const Login = () => {
-  const { register, handleSubmit , control} = useForm();
+  const { register, handleSubmit, control } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
     <div className="flex  items-centers w-full h-1/2 md:px-36 px-16">
@@ -13,7 +14,7 @@ const Login = () => {
         <p className="text-center text-3xl font-bold mt-5">Log In</p>
         <div className="flex flex-col py-3 px-4 gap-3 h-full">
           <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1">
               <h3 className="text-lg text-slate-600">Email</h3>
               <div className="">
                 <Controller
@@ -60,6 +61,14 @@ const Login = () => {
               type="submit"
               className="py-1.5 bg-[#61777F] w-full mt-4 hover:bg-[#adb5a8] shadow-lg text-xl text-white"
             />
+            <p className="text-sm sm:text-base mt-4">
+              {`Don't have an account?`}{" "}
+              <Link to="/Register">
+                <span className="font-medium hover:underline">
+                  Sign up
+                </span>
+              </Link>{" "}
+            </p>
           </form>
         </div>
       </div>

@@ -21,10 +21,10 @@ const NavBar = () => {
         end={() => (
           <div className="flex gap-2">
             <Link to="/login">
-              <span className="text-sm font-sans cursor-pointer">Login</span>
+              <span className="cursor-pointer">Login</span>
             </Link>
             <Link to="/register">
-              <span className="text-sm font-sans cursor-pointer">Register</span>
+              <span className="cursor-pointer">Register</span>
             </Link>
           </div>
         )}
