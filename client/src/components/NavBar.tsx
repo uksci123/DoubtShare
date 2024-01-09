@@ -13,6 +13,7 @@ const NavBar = () => {
   return (
     <div className="w-full ">
       <Toolbar
+        className="bg-stone-300"
         start={() => (
           <div className="w-[80px]">
             <Link to={'/'}>

@@ -6,7 +6,7 @@ export const Register = () => {
   const { register, handleSubmit, control } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className="flex  items-centers w-full h-1/2 md:px-36 px-16">
+    <div className="flex  items-centers w-full h-1/2 md:px-36 px-10">
       <div
         className="flex flex-col h-[400px] flex-1  md:w-1/2 text-[#61777F] rounded-lg md:rounded-l-lg my-6 min-w-[250px]"
         style={{ boxShadow: "0 0 50px -12px rgba(0,0,0,.25)" }}
